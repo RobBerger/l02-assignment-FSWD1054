@@ -1,4 +1,4 @@
-  [
+  let experience = [
       {
           companyName: "ABC Corp",
           jobTitle: "Retail Jedi",
@@ -15,3 +15,5 @@
           description: "Checking security vulnerabilities"
       }
   ]
+
+  export default experience
