@@ -3,12 +3,19 @@ import experience from './Experience.js';
 import './Experience.css';
 
 function App() {
-  let myExperience = experience[0]
+  let experienceList = experience.map( (myExperience) => {
+    return (
+    <li class = 'listItem'>
+      <div class = 'title'>{myExperience.jobTitle}, {myExperience.companyName}</div>
+      <div class = 'descript'>{myExperience.description}</div>
+    </li>
+    )})
   return (
     <div className="App">
       <h1>My Work Experience</h1>
-      <div>{myExperience.jobTitle}, {myExperience.companyName}</div>
-      <div>{myExperience.description}</div>
+      
+      <ul>{experienceList}</ul>
+
     </div>
   );
 }
