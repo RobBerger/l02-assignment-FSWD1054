@@ -13,9 +13,7 @@ function App() {
   return (
     <div className="App">
       <h1>My Work Experience</h1>
-      
       <ul>{experienceList}</ul>
-
     </div>
   );
 }
