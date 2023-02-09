@@ -1,18 +1,14 @@
 import React from 'react';
-import experience from './Experience';
+import experience from './Experience.js';
 import './Experience.css';
 
 function App() {
+  let myExperience = experience[0]
   return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div className="App">
+      <h1>My Work Experience</h1>
+      <div>{myExperience.jobTitle}, {myExperience.companyName}</div>
+      <div>{myExperience.description}</div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-  let experience = [
+  const experience = [
       {
           companyName: "ABC Corp",
           jobTitle: "Retail Jedi",
